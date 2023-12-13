@@ -1,0 +1,60 @@
+/* Estilos para telas grandes */
+.card {
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas à imagem */
+    overflow: hidden;
+    /* Garante que a borda arredondada da imagem seja aplicada */
+}
+
+.card__img img {
+    height: 100px;
+    object-fit: contain;
+    /* Alterado para 'contain' para manter a proporção sem cortar */
+    display: block;
+    border-radius: 8px;
+}
+
+.card__content,
+.card__title {
+    width: 200%;
+    margin: auto;
+}
+
+
+
+/* Estilos para telas médias e pequenas */
+@media screen and (max-width: 768px) {
+    .card {
+        
+        width: 90%;
+        margin-left: 70px;
+        margin-top: 20px;
+        
+    }
+
+    .card__img {
+        border-radius: 10px;
+    }
+
+    .card__img img {
+        width: 100%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção sem cortar */
+        object-fit: contain;
+    }
+}

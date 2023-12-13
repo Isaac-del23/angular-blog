@@ -1,0 +1,22 @@
+/* Estilos padrão */
+.conteiner__menu__Title {
+    margin: 20px;
+    font-size: 25px;
+
+}
+
+/* Estilos para telas maiores que 768 pixels (pode ajustar conforme necessário) */
+@media screen and (min-width: 768px) {
+    .conteiner__menu__Title {
+        margin: 40px;
+    }
+}
+
+/* Estilos para telas maiores que 1200 pixels (pode ajustar conforme necessário) */
+@media screen and (min-width: 1200px) {
+    .conteiner__menu__Title {
+        margin: 60px;
+    }
+}
+
+/* Outros estilos para diferentes tamanhos de tela podem ser adicionados conforme necessário */

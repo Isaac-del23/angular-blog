@@ -1,0 +1,60 @@
+/* Estilos para telas grandes */
+
+
+
+/* Estilos para o card */
+.card {
+    height:600px;
+    width:400px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    padding: 20px; /* Adiciona espaço interno ao card */
+    border: 2px solid #ccc; /* Adiciona uma borda */
+    margin-left: 55px;
+    margin-right: 10px;
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+    overflow: hidden; /* Garante que a borda arredondada da imagem seja aplicada */
+}
+
+.card__img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card__content {
+    flex: 1;
+    padding: 16px;
+   
+}
+
+.card__title {
+    margin-top: 0;
+    
+}
+
+
+/* Estilos para telas médias e pequenas */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%; /* Faz com que o card ocupe 100% da largura disponível em telas menores */
+    }
+    .card__img { 
+        border-radius: 10px;
+    }
+    .card__img img {
+        align-items: center;
+        justify-content: center; /* Centraliza a imagem horizontalmente */
+        align-items: center; /* Centraliza a imagem verticalmente */
+        
+        
+    }
+}
+
